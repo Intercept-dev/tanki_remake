@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<library name="NY">
+	<prop-group name="NY">
+		<prop name="Elka">
+			<mesh file="elka.3ds"/>
+		</prop>
+		<prop name="ElkaSmall">
+			<mesh file="small.3ds"/>
+		</prop>
+		<prop name="ElkaMedium">
+			<mesh file="medium.3ds"/>
+		</prop>
+		<prop name="Chest01">
+			<mesh file="chest01.3ds"/>
+		</prop>
+		<prop name="Chest02">
+			<mesh file="chest02.3ds"/>
+		</prop>
+		<prop name="Chest03">
+			<mesh file="chest03.3ds"/>
+		</prop>
+		<prop name="Chest04">
+			<mesh file="chest04.3ds"/>
+		</prop>
+		<prop name="Chest05">
+			<mesh file="chest05.3ds"/>
+		</prop>
+		<prop name="Chest06">
+			<mesh file="chest06.3ds"/>
+		</prop>
+		<prop name="ny_banner">
+			<mesh file="ny_banner.3ds">
+				<texture name="NY Ban 0" diffuse-map="ny_ban.jpg" />
+				<texture name="NY Ban 1" diffuse-map="ny_ban_1.jpg" />
+				<texture name="NY Ban 2" diffuse-map="ny_ban_2.jpg" />
+				<texture name="NY Ban 3" diffuse-map="ny_ban_3.jpg" />
+			</mesh>
+		</prop>
+	</prop-group>
+	<prop-group name="Snowman Sprites">
+		<prop name="snowman 0">
+			<sprite file="snowman_0.png" origin-y="0.95" scale="3"/>
+		</prop>
+		<prop name="snowman 2">
+			<sprite file="snowman_2.png" origin-y="0.95" scale="3"/>
+		</prop>
+		<prop name="snowman 4">
+			<sprite file="snowman_4.png" origin-y="0.95" scale="3"/>
+		</prop>
+	</prop-group>
+	<prop-group name="Sprites">
+		<prop name="Shar 1">
+			<sprite file="shar_1.png" origin-y="0.1" scale="1"/>
+		</prop>
+		<prop name="Shar 2">
+			<sprite file="shar_2.png" origin-y="0.1" scale="1"/>
+		</prop>
+		<prop name="Shar 3">
+			<sprite file="shar_3.png" origin-y="0.1" scale="1"/>
+		</prop>
+		<prop name="Shar 4">
+			<sprite file="shar_4.png" origin-y="0.1" scale="1"/>
+		</prop>
+	</prop-group>
+
+</library>

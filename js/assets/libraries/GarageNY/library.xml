@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library name="Garage">
+    <prop-group name="default">
+        <prop name="Garage New Year">
+            <mesh file="garageny.3ds">
+              <texture name="GarageNY" diffuse-map="garageny.png"/>
+          </mesh>
+      </prop>
+  </prop-group>
+</library>

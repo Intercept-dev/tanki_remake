@@ -1,0 +1,132 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+/* Canvas styling */
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+/* Custom input styles */
+.custom-input {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 70%);
+    color: #fff;
+    padding: 2px;
+    height: 26px;
+    width: 230px;
+    border-radius: 5px;
+    border: 1px solid rgba(162, 162, 162, 0.7);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    outline: none;
+}
+
+/* Password input field with MyriadPro font */
+.custom-input.password {
+    font-family: "MyriadPro", Arial, sans-serif;
+}
+
+/* Input focus styles */
+input:focus {
+    outline: none;
+}
+
+/* Input wrapper for positioning */
+#inputWrapper {
+    position: absolute;
+    display: none; /* Initially hidden; shown when the screen is drawn */
+    flex-direction: column;
+    gap: 10px; /* Space between the two inputs */
+}
+
+/* Optional: Styling for placeholder text */
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Remove outline from any button-like elements */
+button, input[type="button"], input[type="submit"], a {
+    outline: none;
+}
+
+/* Remove outline from all elements when focused */
+*:focus {
+    outline: none;
+}
+
+/* Styling for text links */
+a {
+    color: #2ed139;
+    text-decoration: underline;
+    font-size: 11px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Interactive square styling */
+.interactive-square-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.interactive-square {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom, #999999 0%, #333333 100%);
+    border-radius: 5px;
+    border: 2px solid #000000;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.interactive-square::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 2%,
+        rgba(255, 255, 255, 0) 2%,
+        rgba(255, 255, 255, 0) 4%
+    );
+}
+
+.interactive-square:hover::before {
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 2%,
+        rgba(255, 255, 255, 0) 2%,
+        rgba(255, 255, 255, 0) 4%
+    );
+}
+
+.interactive-square:active::before {
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.4) 2%,
+        rgba(255, 255, 255, 0) 2%,
+        rgba(255, 255, 255, 0) 4%
+    );
+}
+
+.interactive-square-text {
+    margin-left: 7px;
+    color: #fff;
+    font-size: 13px;
+}

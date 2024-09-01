@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Add input fields that replace the login_thing.png images -->
+    <div id="inputWrapper">
+        <input type="text" class="custom-input" placeholder="">
+        <input type="password" class="custom-input" placeholder="">
+    </div>
+
+    <!-- Add square element -->
+    <div class="interactive-square"></div>
+
+    <script src="js/background.js"></script> <!-- Load background script first -->
+    <script src="js/loading.js"></script>    <!-- Load loading bar script second -->
+    <script src="js/accountRegister.js"></script> <!-- Load account registration script third -->
+    <script src="js/main.js"></script>       <!-- Load main script last -->
+</body>
+</html>
